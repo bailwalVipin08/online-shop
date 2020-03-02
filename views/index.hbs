@@ -1,0 +1,23 @@
+{{>navbar}}
+<main>
+  <h1 class="heading-primary">
+    {{pageHeading}}
+  </h1>
+  <p>You have {{items}} items...</p>
+
+
+  <div class="container">
+    <div class="row">
+ {{#each products }}
+      <div class="column">
+        <div class="card">
+          <h2 class="heading-secondary">{{this.name}}</h2>
+          <p class="product__description">{{this.description}}</p>
+          <p class="product__price">{{this.cost}}</p>
+        </div>
+      </div>
+        {{/each}}
+    </div>
+  </div> 
+ 
+</main>

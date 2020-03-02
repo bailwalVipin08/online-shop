@@ -1,0 +1,32 @@
+{{>navbar}}
+<main>
+  <h1 class="heading-primary">
+    {{pageHeading}}
+  </h1>
+  <form id="add-product-form" method="POST">
+    <div class="form-group">
+      <label for="product__name">
+        Product Name
+      </label>
+      <input id="product__name" name="name" type="text" class="product__input" />
+    </div>
+    <div class="form-group">
+      <label for="product__cost">
+        Product Cost
+      </label>
+      <input id="product__cost" name="cost" type="text" class="product__input" />
+    </div>
+     <div class="form-group">
+      <label for="product__description">
+        Product Description
+      </label>
+      <input id="product__description" name="description" type="text" class="product__input" />
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn">
+        Submit
+      </button>
+    </div>
+  </form>
+</main>
+<script src="/js/add-product.js"></script>
